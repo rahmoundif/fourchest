@@ -1,5 +1,9 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  base: '/your-repo-name/', // Replace 'your-repo-name' with your GitHub repository name
+    base: '/fourchest/', // Replace 'my-repo' with your actual repository name
+    plugins: [
+        tailwindcss()
+    ]
 });
